@@ -1,0 +1,115 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+    <head>
+        <style>
+    body   {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            a {
+                text-decoration: none;
+            }
+            .box {
+                font-size: 60px;
+                color: rgb(255, 255, 255);
+                height: 2550px;
+                width: 3500px;
+                border-radius: 10px;
+                background: #191919;
+                flex-direction: column;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .buttons-container {
+                display: flex;
+                justify-content: space-around;
+                height: 50px;
+                width: 150px;
+            }
+            button {
+                height: 80px;
+                width: 150px;
+                background: white;
+                border-radius: 5px;
+                color: blue;
+                font-weight: 600;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <p>Vai fazer o pix?</p>
+            <div> 
+                <button>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Sim</a>
+                </button>
+                <button id="no">Nao</button>
+            </div>
+        </div>
+    </body>
+    <script>
+        let button = document.getElementById('no');
+        let height = window.innerHeight - 50;
+        let width = window. innerWidth - 50;
+
+        button.addEventListener('mouseover', function(){
+            button.style.position = "absolute";
+            button.style.top = Math.random() * height + "px";
+            button.style.left = Math.random() * width + "px";
+        })
+    </script>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+</style>
+<title>Meu Site</title>
+</head>
+<body>
+  <!-- Conteúdo do seu site aqui -->
+
+  <div class="footer">
+    Desenvolvido por Luciano Junior Vicosa Alagoas, GitHub: TheSlowFlow. Todos os direitos reservados.
+  </div>
+</body>
+</html>
